@@ -446,7 +446,7 @@ download_mysql() {
     print_info "开始下载 MySQL..."
     echo "URL: ${DOWNLOAD_URL}"
 
-    wget -c --show-progress "${DOWNLOAD_URL}" -O "${MYSQL_TAR}" || die "下载失败"
+    wget -c  "${DOWNLOAD_URL}" -O "${MYSQL_TAR}" || die "下载失败"
     [ -f "${MYSQL_TAR}" ] || die "下载完成但安装包不存在"
     print_info "下载完成"
 }
