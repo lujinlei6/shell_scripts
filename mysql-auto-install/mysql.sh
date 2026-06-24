@@ -186,15 +186,9 @@ install_base_tools() {
             safe_install_pkgs \
                 wget \
                 tar \
-                xz \
                 perl \
                 net-tools \
-                less \
-                curl \
-                unzip \
-                bzip2 \
-                lsof \
-                hostname
+                curl
 
             # vim 包名兼容：先试 vim-minimal，失败试 vim-enhanced，再失败试 vim-common
             if ! command -v vim &>/dev/null; then
